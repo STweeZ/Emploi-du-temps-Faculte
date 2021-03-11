@@ -1,0 +1,188 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.navbar {
+    background: #474a4f!important;
+    font-size: 1.2rem !important;
+    font-family: "sans-serif"!important;
+    margin-bottom: 20px!important;
+}
+
+.header-link { /* title of the page */
+    font-weight: bold;
+    color: #FFFFFF!important;
+}
+
+.header-link:hover {
+    color: rgba(255,255,255,.5)!important;
+}
+
+.menulink { /* element clickable of the navbar */
+    cursor: pointer;
+}
+
+.dropdown-item:active { /* dropdown background */
+    background: #dddddd!important;
+}
+
+#body {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    background: #edeff2;
+    font-size: 100%;
+    margin: 0;
+    padding-bottom: 70px;
+}
+
+a {
+    background-color: transparent;
+    color: #000000;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #edeff2;
+}
+
+div#containerLeft { /* position of the left container (calendar + cards modification) */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.container-fluid { /* position of the principal container right */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.monthYear { /* title date of the calendar */
+    text-align: center;
+}
+
+#monthAndYear { /* calendar title */
+    cursor: pointer;
+}
+
+tr { /* all rows */
+    text-align: center;
+}
+
+.dayOfWeek { /* the title of each day of the week */
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    zoom: 75%;
+}
+
+#edt { /* the edt table */
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    zoom: 75%;
+}
+
+#edt>thead>tr>th, #edt>tbody>tr>td { /* each cells of edt table */
+    padding: 8px;
+    line-height: 2.0;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    min-width: 8px;
+    border-color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cellAgendaEmpty>p, .cellAgendaEmpty>br { /* the contents of empty agenda cells are hidden */
+    visibility: hidden;
+}
+
+.edtLeftColumn { /* group column */
+    font-weight: bold!important;
+    border-bottom: #edeff2;
+    width: auto;
+}
+
+.edtTopColumn { /* group column */
+    font-weight: bold!important;
+}
+
+.cm { /* cm cell */
+    opacity: 1;
+    background: #5BDCE0;
+}
+
+.td { /* td cell */
+    opacity: 1;
+    background: #C472DC;
+}
+
+.tp { /* tp cell */
+    opacity: 1;
+    background: #E0B65B;
+}
+
+.agendaCell { /* all agenda cells */
+    border-top: none!important;
+    border-bottom: none!important;
+    background: #edeff2;
+}
+
+.agendaCellFill { /* agenda cells that are not empty */
+    border-color: #FFFFFF;
+}
+
+.agendaCellSplit { /* first agenda cell from an hour */
+    border-bottom: none!important;
+    background: #edeff2;
+}
+
+.infoBulle { /* infoBulle on a text in a cell */
+    cursor: help;
+}
+
+.infoBulle:hover:before { /* to see the infoBulle and the position of this one */
+    visibility: visible;
+    content: attr(aria-label);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    max-width: 16rem;
+    font-size: 1.0rem;
+    white-space: pre-wrap;
+    padding: 0px 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.details:hover, .cours:hover { /* hover on a classroom/teacher/school subject and the type */
+    visibility: hidden;
+}
+
+#selectedWeek { /* weeks printed*/
+    display: flex;
+    overflow-x: auto;
+}
+
+.oneWeek { /* each weeks */
+    flex: 0 0 100%;
+}
+
+form > .row { /* each row from all form used */
+    margin: 1rem;
+}
