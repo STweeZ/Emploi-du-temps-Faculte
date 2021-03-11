@@ -50,7 +50,7 @@ De cette manière la barre de navigation présente le minimum d'informations afi
 
 ![Database schema](/database.png)
 
-Vous pouvez voir ci-dessus le schéma de la base de données utilisées. Je vais vous expliquer cette dernière.
+Vous pouvez voir ci-dessus le schéma de la base de données utilisées. Je vais vous expliquer cette dernière :
 
 1. Table 'Role'. Dans cette table nous trouvons un champ 'intitule' de type VARCHAR représentant le nom du rôle. Il existe 3 rôles, 'Etudiant', 'Enseignant', 'Administratif'. Ce sont 3 rôles nécessaires à l'élaboration de l'application web.
 2. Table 'Utilisateur'. Dans cette table nous trouvons le champ 'idRole' de type INTEGER faisant référence à un rôle parmis les 3 rôles existants de la table 'Role'. Ces utilisateurs présentent un champ 'nom' de type VARCHAR, 'prenom' de type VARCHAR, mail' de type VARCHAR que 'mot_de_passe' de type VARCHAR. Leur mots de passe sont chiffrés. Nous avons ensuite un champ 'idPromotion' de type INTEGER, c'est une clé étrangère de la table 'Promotion' et cette relation correspond au fait qu'un étudiant se voit assigné une promotion en particulier.
